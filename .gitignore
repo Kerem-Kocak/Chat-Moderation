@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data and model weights are NOT committed (homework rule R7).
+# Weights are published on the Hugging Face Hub / Google Drive instead.
+data/
+data_smoke/
+artifacts/
+artifacts_smoke/
+results_smoke/
+.hf_cache/
+*.pt
+*.safetensors
+*.bin
+*.joblib
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

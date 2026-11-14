@@ -1,0 +1,87 @@
+{
+  "lexicon": {
+    "val": {
+      "accuracy": 0.729607250755287,
+      "macro_f1": 0.6653959971085208,
+      "off_precision": 0.6771929824561403,
+      "off_recall": 0.420479302832244
+    },
+    "params": {
+      "top_k": 80,
+      "max_edit": 1
+    },
+    "train_seconds": 3.3
+  },
+  "tfidf": {
+    "val": {
+      "accuracy": 0.7522658610271903,
+      "macro_f1": 0.7289919322629603,
+      "off_precision": 0.6373165618448637,
+      "off_recall": 0.6623093681917211
+    },
+    "params": {
+      "C": 0.5,
+      "n_features": 84833
+    },
+    "train_seconds": 17.6
+  },
+  "w2v_ffn": {
+    "val": {
+      "accuracy": 0.7114803625377644,
+      "macro_f1": 0.6737982400243538,
+      "off_precision": 0.5927710843373494,
+      "off_recall": 0.5359477124183006
+    },
+    "params": {
+      "vocab_size": 8567,
+      "dim": 100,
+      "window": 5,
+      "negatives": 5,
+      "min_count": 2,
+      "epochs": 40,
+      "batch_size": 64,
+      "lr": 0.05,
+      "subsample_t": 0.001,
+      "hidden": 128,
+      "dropout": 0.3,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "patience": 6,
+      "max_len": 64
+    },
+    "train_seconds": 29.0
+  },
+  "bert": {
+    "val": {
+      "accuracy": 0.7945619335347432,
+      "macro_f1": 0.7732391350888461,
+      "off_precision": 0.7037037037037037,
+      "off_recall": 0.7037037037037037
+    },
+    "params": {
+      "model_name": "bert-base-uncased",
+      "epochs": 3,
+      "batch_size": 32,
+      "lr": 2e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_len": 64
+    },
+    "train_seconds": 3203.6
+  },
+  "quantize": {
+    "params": {
+      "method": "dynamic INT8 (torch.ao.quantization.quantize_dynamic)",
+      "backend": "onednn",
+      "fp32_mb": 417.7,
+      "int8_mb": 173.1
+    },
+    "val": {
+      "accuracy": 0.802870090634441,
+      "macro_f1": 0.7650846524338637,
+      "off_precision": 0.7964071856287425,
+      "off_recall": 0.579520697167756
+    },
+    "train_seconds": 17.4
+  }
+}

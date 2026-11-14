@@ -1,0 +1,6 @@
+model,ladder,precision,accuracy,macro_f1,off_precision,off_recall,size_mb,latency_mean_ms,latency_p50_ms,latency_p95_ms,meets_budget
+Lexicon + Edit Distance,Rule baseline,n/a,0.7698,0.6851,0.6207,0.45,0.0,0.05,0.04,0.08,yes
+TF-IDF + LogReg,Classical baseline,FP64,0.7826,0.7409,0.5964,0.6833,2.27,1.11,1.08,1.37,yes
+Word2Vec + FFN,Neural network,FP32,0.7128,0.6514,0.4865,0.525,3.48,0.21,0.2,0.27,yes
+BERT-base (FP32),Transformer,FP32,0.8535,0.816,0.7457,0.7208,417.67,67.21,64.05,104.86,no
+BERT-base (INT8),Quantized Transformer,INT8 (dynamic),0.8523,0.7935,0.8509,0.5708,173.09,30.07,28.61,44.37,yes
