@@ -3,7 +3,7 @@
 **Student Name:** Kerem KOÇAK  
 **Student ID:** 2309111056  
 **Course:** SWE015 – Introduction to Large Language Models (*Building an Intelligent Application*)  
-**2-Min Demo Video:** https://drive.google.com/file/d/1PRC40JAmbYYW5ypObwgap5p-Ul_IjtXd/view?usp=drive_link  
+**2-Min Demo Video:** I shared the link in blackboard only for my professor. 
 **Pretrained Model Weights (`artifacts.zip`):** https://drive.google.com/file/d/1YKd2OniAwFz9xI_ahvVesYFvjs6q1NET/view?usp=sharing  
 
 Flags offensive chat messages **live on a CPU-only server**, masks them, and logs how long each model took to respond.
